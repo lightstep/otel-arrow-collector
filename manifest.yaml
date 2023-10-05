@@ -1,7 +1,7 @@
 dist:
   module: github.com/open-telemetry/opentelemetry-demo/src/otelcollector
   name: otelcol-demo
-  description: OpenTelemetry Collector with Arrow
+  description: OpenTelemetry Collector with Arrow Receiver/Exporter
   version: 0.86.0
   output_path: ./_build
   otelcol_version: 0.86.0
