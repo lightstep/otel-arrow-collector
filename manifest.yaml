@@ -8,10 +8,14 @@ dist:
 
 receivers:
   - gomod: go.opentelemetry.io/collector/receiver/otlpreceiver v0.86.0
+  - import: github.com/open-telemetry/otel-arrow/collector/receiver/otelarrowreceiver
+    gomod: github.com/open-telemetry/otel-arrow/collector v0.4.0
 exporters:
   - gomod: go.opentelemetry.io/collector/exporter/loggingexporter v0.86.0
   - gomod: go.opentelemetry.io/collector/exporter/otlpexporter v0.86.0
   - gomod: go.opentelemetry.io/collector/exporter/otlphttpexporter v0.86.0
+  - import: github.com/open-telemetry/otel-arrow/collector/exporter/otelarrowexporter
+    gomod: github.com/open-telemetry/otel-arrow/collector v0.4.0
 processors:
   - gomod: go.opentelemetry.io/collector/processor/batchprocessor v0.86.0
 connectors:
